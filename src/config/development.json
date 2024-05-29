@@ -1,0 +1,33 @@
+
+{
+    "PORT": 3015,
+    
+    "DEFAULT_PORT": 3015,
+    
+    "MONGODB_URI": "mongodb://ra-followup-1:EY0m9sU6PxL6bVT9@areteq-mdb-shard-00-00-kw4zo.mongodb.net:27017,areteq-mdb-shard-00-01-kw4zo.mongodb.net:27017,areteq-mdb-shard-00-02-kw4zo.mongodb.net:27017/test?ssl=true&replicaSet=areteq-mdb-shard-0&authSource=admin&retryWrites=true&w=majority",
+    
+    "REQUEST_STRICT_SSL": false,
+    
+    "RETRY_ATTEMPTS": 3,
+    
+    "RETRY_TIME": 3000,
+
+    "SECRET_KEY": "my-secrete",
+    "MYSQL": {
+        "HOST": "localhost",
+        "PORT": 3306,
+        "USER": "root",
+        "PASSWORD": "Andil2314@",
+        "DATABASE": "hts_project",
+        "RETRY_ATTEMPTS": 3,
+        "RETRY_TIME": 3000
+        },
+   
+    
+    "FRONT_END": {
+
+        "BASE_URL": "http://localhost:3015/content/v1",
+        "SITE_URL":"http://localhost:3015/content/v1"
+
+    }
+}   

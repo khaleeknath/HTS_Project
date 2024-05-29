@@ -1,0 +1,29 @@
+
+> hts_project@1.0.0 start /home/jarvis/Desktop/HTS_Project
+> node ./build/main.js
+
+[32minfo[39m:    
+    ################################################
+    ###     Server listening on port: port 3015    ###
+    ################################################
+    
+Executing (default): SELECT 1+1 AS result
+[32minfo[39m:    Connection successful
+Executing (f46aaeeb-fdd2-424e-b366-7f180f3f45dd): START TRANSACTION;
+Executing (f46aaeeb-fdd2-424e-b366-7f180f3f45dd): SELECT `id`, `first_name` AS `firstName`, `last_name` AS `lastName`, `password`, `token`, `email`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `tbl_user` AS `tbl_user` WHERE `tbl_user`.`email` = 'khalesid@gmail.com' LIMIT 1;
+Executing (f46aaeeb-fdd2-424e-b366-7f180f3f45dd): COMMIT;
+Executing (fc75c642-86a9-4049-bd62-6f3e098ac5a2): START TRANSACTION;
+Executing (fc75c642-86a9-4049-bd62-6f3e098ac5a2): UPDATE `tbl_user` SET `token`=? WHERE `id` = ?
+Executing (fc75c642-86a9-4049-bd62-6f3e098ac5a2): COMMIT;
+Executing (default): SELECT `id`, `first_name` AS `firstName`, `last_name` AS `lastName`, `password`, `token`, `email`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `tbl_user` AS `tbl_user` WHERE `tbl_user`.`email` = 'khalesid@gmail.com' LIMIT 1;
+[0mPOST /content/v1/sign-in [32m200[0m 286.333 ms - 426[0m
+Executing (default): INSERT INTO `tbl_user` (`id`,`first_name`,`last_name`,`password`,`email`) VALUES (DEFAULT,?,?,?,?);
+[0mPOST /content/v1/sign-up [32m200[0m 208.973 ms - 213[0m
+Executing (4af09855-8148-434f-b070-1497e06e270b): START TRANSACTION;
+Executing (4af09855-8148-434f-b070-1497e06e270b): SELECT `id`, `first_name` AS `firstName`, `last_name` AS `lastName`, `password`, `token`, `email`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `tbl_user` AS `tbl_user` WHERE `tbl_user`.`email` = 'adi@gmail.com' LIMIT 1;
+Executing (4af09855-8148-434f-b070-1497e06e270b): COMMIT;
+Executing (b6a960ff-ec1c-4214-a1e4-c1c1c7d71e94): START TRANSACTION;
+Executing (b6a960ff-ec1c-4214-a1e4-c1c1c7d71e94): UPDATE `tbl_user` SET `token`=? WHERE `id` = ?
+Executing (b6a960ff-ec1c-4214-a1e4-c1c1c7d71e94): COMMIT;
+Executing (default): SELECT `id`, `first_name` AS `firstName`, `last_name` AS `lastName`, `password`, `token`, `email`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `tbl_user` AS `tbl_user` WHERE `tbl_user`.`email` = 'adi@gmail.com' LIMIT 1;
+[0mPOST /content/v1/sign-in [32m200[0m 241.154 ms - 418[0m
